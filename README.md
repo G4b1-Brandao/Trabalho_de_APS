@@ -1,4 +1,4 @@
-# 📌 Projeto de Análise e Projeto de Sistemas  
+# 📌 Trabalho de Análise e Projeto de Sistemas  
 
 Este repositório contém o desenvolvimento de um trabalho acadêmico da disciplina **Análise e Projeto de Sistemas**, onde estamos elaborando um projeto voltado para **tecnologia e desenvolvimento sustentável**.  
 
