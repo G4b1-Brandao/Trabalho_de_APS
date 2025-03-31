@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecoNote - Gestão de Notebooks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ecoNote</h1>
+        <p>Reaproveitamento de Eletrônicos para Inclusão Digital</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" id="cadastroLink">Cadastrar Equipamento</a></li>
+            <li><a href="#" id="listagemLink">Listar Equipamentos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Formulário de Cadastro -->
+        <section id="cadastroEquipamento">
+            <h2>Cadastrar Novo Equipamento</h2>
+            <form id="equipamentoForm">
+                <label for="nome">Nome do Equipamento:</label>
+                <input type="text" id="nome" required>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" required>
+
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" required>
+
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option value="Disponível">Disponível</option>
+                    <option value="Emprestado">Emprestado</option>
+                    <option value="Manutenção">Manutenção</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <!-- Listagem de Equipamentos -->
+        <section id="listagemEquipamentos" style="display:none;">
+            <h2>Lista de Equipamentos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaEquipamentos">
+                    <!-- Os equipamentos serão inseridos aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
